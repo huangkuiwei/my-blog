@@ -1,7 +1,8 @@
 ---
-title: 字符串截取slice()、substr()、substring()的用法和区别
+title: 字符串截取函数slice()、substr()、substring()的用法和区别
 date: 2018-05-011 18:44:30
 author: huangkuiwei
+img: http://img.25pp.com/uploadfile/soft/images/2015/0301/20150301021016689.jpg
 tags: 
     - javascript
 ---
