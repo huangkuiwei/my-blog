@@ -182,6 +182,24 @@ header .brand-logo .logo-img {
 header .brand-logo .logo-span {
   font-size: 2rem;
 }
+@media screen and (max-width: 601px) {
+  header .brand-logo .logo-span {
+    font-size: 1.4rem;
+  }
+  header .brand-logo {
+    transform: none;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .waves-effect {
+    vertical-align: baseline;
+  }
+  header .brand-logo .logo-img {
+    height: 30px;
+    padding-bottom: 0;
+  }
+}
 header .button-collapse i {
   font-size: 1.5rem;
 }
