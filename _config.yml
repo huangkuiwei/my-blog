@@ -81,4 +81,6 @@ deploy:
   type: git
   repo: git@github.com:huangkuiwei/huangkuiwei.github.io.git
   branch: master
-  Plugins: - hexo-generator-cname
+
+Plugins:
+  - hexo-generator-cname
