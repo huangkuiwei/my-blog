@@ -90,3 +90,7 @@ deploy:
 
 Plugins:
   - hexo-generator-cname
+
+search:
+  path: search.xml
+  field: post
