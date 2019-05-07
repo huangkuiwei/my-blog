@@ -33,9 +33,9 @@ cover:
 # 配置首页显示"梦想"的语句.
 dream:
   enable: true
-  showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  showTitle: false
+  title: 我的博客
+  text: 我的博客会分享一些技术和个人感悟类的文章，包括转载他人一些优秀文章，当然也会有自己的一些原创，主要是前端方向的技术文章。
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -330,7 +330,7 @@ libs:
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
-featureImages: 
+featureImages:
 - /medias/featureimages/0.jpg
 - /medias/featureimages/1.jpg
 - /medias/featureimages/2.jpg
