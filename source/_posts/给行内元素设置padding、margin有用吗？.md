@@ -1,5 +1,5 @@
 ---
-title: 给行内原生设置padding、margin有用吗？
+title: 给行内元素设置padding、margin有用吗？
 date: 2018-06-29 22:22:45
 author: huangkuiwei
 img: http://pic.appvv.com/e410f4c07f84a45d5e78f4fc7a709b54/175.png
