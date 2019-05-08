@@ -4,7 +4,7 @@ date: 2018-06-09 15:22:08
 author: huangkuiwei
 img: http://www.logicsolutions.com/wp-content/uploads/2015/06/html5.png
 tags: 
-    - html
+    - HTML
 ---
 ## 一. 前言
 如果需要在移动浏览器中实现拨打电话，调用sms发短信，发送email等功能，移动手机WEB页面(HTML5)Javascript提供的接口是一个好办法。通过url的href链接的方式，实现在各种主流手机浏览器，进行拨打电话等功能。

@@ -5,7 +5,7 @@ author: huangkuiwei
 img: http://www.manongjc.com/images/51jb/154648858215Q4G648Pl8582.png
 tags: 
     - Vue
-    - javascript
+    - JavaScript
 ---
 ## 一. 用法异同
 1.两者在使用效果上没有任何区别，都是为了将实例化后的vue挂载到指定的dom元素中。

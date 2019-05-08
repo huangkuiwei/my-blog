@@ -5,7 +5,7 @@ author: huangkuiwei
 img: http://www.linuxeden.com/wp-content/uploads/2017/07/vihz5fczfwkyqo0z1200.jpg
 tags: 
     - Vue
-    - javascript
+    - JavaScript
 ---
 ## 一. 优先级
 1.当Vue选项对象中有render渲染函数时，Vue构造函数将直接使用渲染函数渲染DOM树。

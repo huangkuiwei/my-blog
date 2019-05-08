@@ -4,10 +4,10 @@ date: 2018-05-11 18:44:30
 author: huangkuiwei
 img: http://img.25pp.com/uploadfile/soft/images/2015/0301/20150301021016689.jpg
 tags: 
-    - javascript
+    - JavaScript
 ---
 ## 一. 前言
-> 在javascript中有三个很常用的字符串截取函数：slice()、substr()、substring()，这三个函数经常混在一起用，老是会记糊涂，所以我今天特别整理了一下这三个函数的用法。
+> 在JavaScript中有三个很常用的字符串截取函数：slice()、substr()、substring()，这三个函数经常混在一起用，老是会记糊涂，所以我今天特别整理了一下这三个函数的用法。
 ## 二. 用法
 ### 1. slice()
 ① slice方法用于从原字符串取出子字符串并返回，不改变原字符串。它的第一个参数是子字符串的开始位置，第二个参数是子字符串的结束位置（不含该位置）。
