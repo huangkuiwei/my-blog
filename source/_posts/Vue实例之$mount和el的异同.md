@@ -29,6 +29,6 @@ new MyComponent().$mount('#app');
 new MyComponent({ el: '#app' });
 
 // 或者，在文档之外渲染并且随后挂载
-var component = new MyComponent().$mount();
+let component = new MyComponent().$mount();
 document.getElementById('app').appendChild(component.$el)
 ```
