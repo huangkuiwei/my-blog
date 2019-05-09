@@ -32,7 +32,7 @@ localStorage.age = 22;
 localStorage.setItem('address', '长沙市')
 ```
 ![localStorage](/medias/postimages/02.png "localStorage")
->注意：localStorage/sessionStorage储存的值都是字符串格式，typeof的类型都是'string',所有有时需要JSON.stringify()和JSON.parse()进行处理。
+>注意：localStorage/sessionStorage储存的值都是字符串格式，typeof的类型都是'string',所以有时需要JSON.stringify()和JSON.parse()进行处理。
 
 ### 2. localStorage的读取
 ```javascript
