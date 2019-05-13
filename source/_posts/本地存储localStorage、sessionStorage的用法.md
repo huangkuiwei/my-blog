@@ -42,7 +42,7 @@ console.log(localStorage.age);        // '22'
 // 或者（推荐）
 localStorage.getItem('address')       // '长沙市'
 ```
-### 2. localStorage的s删除
+### 2. localStorage的删除
 localStorage的删除主要有两个方法：
 >1. localStorage.clean()        // 把所有的键值对删除
 >2. localStorage.removeItem()   // 只删除某一个键值对
