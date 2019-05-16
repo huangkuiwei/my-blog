@@ -17,6 +17,36 @@ v-model 在内部为不同的输入元素使用不同的属性并抛出不同的
 2. checkbox 和 radio 使用 checked 属性和 change 事件。
 3. select 字段将 value 作为 prop 并将 change 作为事件。
 
+v-model语法糖：
+```html
+<input type="text" v-model="message">
+// 等价于
+<input type="text" :vlaue="message" @input="message=$event.target.value">
+```
+应用在组件上：
+```html
+<base-input v-model="message"></base-input>
+```
+```javascript
+// 注册组件
+Vue.component('base-input', {
+  props: {
+    value: String
+  },
+  template: `<input type="text" :value="value" @input="$emit('input', $event.target.value)"/>`
+});
+
+new Vue({
+  el: '#app',
+  data: {
+    message: 'hello world'
+  }
+})
+```
+>为了让它正常工作，这个组件内的 input 必须：
+>1. 将其 value 特性绑定到一个名叫 value 的 prop 上
+>2. 在其 input 事件被触发时，将新的值通过自定义的 input 事件抛出
+
 ## 二. 文本
 ```html
 <input type="text" v-model="message">
