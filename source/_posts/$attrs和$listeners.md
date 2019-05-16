@@ -47,6 +47,7 @@ Vue.component('base-input', {
 ```
 这个时候 placeholder 属性就没有继承在子组件的根元素 label 上了，而是在 input 元素上，从而达到了我们的目的。
 ## 三. $listeners
+定义：包含了父作用域中的 (不含 .native 修饰器的) v-on 事件监听器。它可以通过 v-on="$listeners" 传入内部组件——在创建更高层次的组件时非常有用。
 ### 1.native修饰符
 你可能有很多次想要在一个组件的根元素上直接监听一个原生事件。这时，你可以使用 v-on 的 .native 修饰符：
 ```html
