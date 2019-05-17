@@ -262,4 +262,90 @@ v-if 指令用于条件性地渲染一块内容。这块内容只会在指令的
   <a v-on:click.once="doThis"></a>
 ```
 
-17. v-model 会忽略所有表单元素的 value、checked、selected 特性的初始值而总是将 Vue 实例的数据作为数据来源。你应该通过 JavaScript 在组件的 data 选项中声明初始值。
+17. 关于Vue响应式的一点实践总结：
+  1. Vue 不能检测对象属性的添加或删除（修改已经存在的属性是可以检测的）。
+  ```html
+      <!-- 给 info 对象添加 age 属性，页面不是响应式的 -->
+      <button @click="info.age=22">按钮</button>
+      <p>{{info.age}}</p>
+  ```
+  ```html
+      <!-- 删除 info 对象的 name 属性后，页面的 'huang' 还是会存在，不是响应式的 -->
+      <button @click="deleteInfoName">按钮</button>
+      <p>{{info.name}}</p>
+  ```
+  ```html
+      <!-- 修改 info 对象的 name 属性，页面会跟着变化，是响应式的。 -->
+      <button @click="info.name='zhang'">按钮</button>
+      <p>{{info.name}}</p>
+  ```
+  ```javascript
+      new Vue({
+        el: '#app',
+        data: {
+          info: {
+            name: 'huang'
+          }
+        },
+        methods: {
+          deleteInfoName() {
+            delete this.info.name
+          }
+        }
+      })
+  ```
+  2. 对于已经创建的实例，Vue 不能动态添加根级别的响应式属性。
+  ```javascript
+      let vm = new Vue({
+        data: {
+          a: 1
+        }
+      });
+      // `vm.a` 现在是响应式的
+      vm.b = 2
+      // `vm.b` 不是响应式的
+  ```
+  3. 使用 v-model 绑定属性问题，见实例： 
+  ```html
+      <!-- 会报错，因为 message 没有在 Vue 实例中进行定义 -->
+      <input type="text" v-model="message">
+  ```
+  ```html
+      <!-- 虽然 info 中没有 name 属性，不过并不会报错，而且 info.name 是响应式的。 -->
+      <input type="text" v-model="info.name">
+      <p>{{info.name}}</p>
+  ```
+  ```javascript
+      new Vue({
+        el: '#app',
+        data: {
+          info: {}  
+        }
+      })
+  ```
+  根据上面的例子我们可以知道，如果 v-model 绑定了未在 Vue 实例中定义的根属性，会报错，但是如果绑定了根属性下一级的对象里面的属性是不会报错的，而且该属性也会响应式。
+  
+  4. 其它例子：
+  ```html
+      <!-- 是响应式的 -->
+      <button @click="info.list = ['1', '2']">按钮</button>
+      <p>{{info.list}}</p>
+  ```
+  ```html
+      <!-- 不是响应式的 -->
+      <button @click="info.list[2] = '王五'">按钮</button>
+      <p>{{info.list}}</p>
+  ```
+  ```javascript
+      new Vue({
+        el: '#app',
+        data: {
+          info: {
+            list: ['张三', '李四']
+          }
+        }
+      })
+  ```
+  >1. 直接修改某个值（不能是数组的某个索引），使它变为另外一个原始值或者指向另外一个指针，此时是响应式的。
+  >2. 修改或者添加数组某个索引的值不能使用：vm.items[indexOfItem] = newValue。要使用 Vue.set()。
+  >3. 新增或者删除对象的值也要使用 Vue.set()。
