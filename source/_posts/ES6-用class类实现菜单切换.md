@@ -5,6 +5,7 @@ author: huangkuiwei
 img: http://5b0988e595225.cdn.sohucs.com/images/20170910/4b1328ea36b14afa8a30a69f32eb9a44.jpeg
 tags: 
     - JavaScript
+    - ES6
 ---
 下面是用 ES6 新特性 class 类写的一个简单易懂的切换菜单功能。
 ```html
