@@ -30,27 +30,27 @@ body {
 }
 h1 {
   margin: 48px 0 22px -5px;
-  font-size: 2.0rem;
-  font-weight: bold;
-  line-height: 2.0rem;
-}
-h2 {
-  margin: 42px 0 18px -5px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8rem;
 }
-h3 {
-  margin: 38px 0 15px -4px;
+h2 {
+  margin: 42px 0 18px -5px;
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
+}
+h3 {
+  margin: 38px 0 15px -4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4rem;
 }
 h4 {
   margin: 32px 0 12px -4px;
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  line-height: 1.45rem;
+  line-height: 1.3rem;
 }
 h5 {
   margin: 28px 0 8px -4px;
