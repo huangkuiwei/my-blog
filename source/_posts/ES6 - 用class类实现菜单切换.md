@@ -1,5 +1,5 @@
 ---
-title: ES6-用class类实现菜单切换
+title: ES6 - 用class类实现菜单切换
 date: 2018-09-28 21:14:55
 author: huangkuiwei
 img: http://5b0988e595225.cdn.sohucs.com/images/20170910/4b1328ea36b14afa8a30a69f32eb9a44.jpeg
