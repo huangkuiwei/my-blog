@@ -5,6 +5,7 @@ author: huangkuiwei
 img: http://img.25pp.com/uploadfile/soft/images/2015/0301/20150301021016689.jpg
 tags: 
     - JavaScript
+    - ES6
 ---
 ## 一. 前言
 &emsp;&emsp;在JavaScript中，有三个声明变量的中关键词，ES5中var以及ES6中新增的let、const，他们都可以用来声明变量，不过在用法上又有些区别，我今天就整理了一下，主要是介绍他们三者常见的用法和区别。
