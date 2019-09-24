@@ -2,7 +2,7 @@
 title: 安卓和IOS一些兼容性的CSS属性详解
 date: 2018-12-21 21:45:15
 author: huangkuiwei
-img: http://pic.appvv.com/e410f4c07f84a45d5e78f4fc7a709b54/175.png
+img: http://oshup.com/wp-content/uploads/2018/04/Learn-HTML5-and-CSS3-languages-for-Dummies.jpg
 tags: 
     - HTML
     - CSS

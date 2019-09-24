@@ -2,7 +2,7 @@
 title: CSS定位之position属性详解
 date: 2018-08-05 22:52:42
 author: huangkuiwei
-img: http://pic.appvv.com/e410f4c07f84a45d5e78f4fc7a709b54/175.png
+img: http://oshup.com/wp-content/uploads/2018/04/Learn-HTML5-and-CSS3-languages-for-Dummies.jpg
 tags: 
     - HTML
     - CSS
