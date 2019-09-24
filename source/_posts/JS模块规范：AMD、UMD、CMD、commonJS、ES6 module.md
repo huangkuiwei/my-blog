@@ -4,7 +4,8 @@ date: 2019-04-18 21:26:34
 author: huangkuiwei
 img: http://img.25pp.com/uploadfile/soft/images/2015/0301/20150301021016689.jpg
 tags: 
-    - ES6 JavaScript
+    - ES6 
+    - JavaScript
 ---
 
 ## 1. commonJS

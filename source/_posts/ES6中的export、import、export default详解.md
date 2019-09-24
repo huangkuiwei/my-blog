@@ -4,7 +4,8 @@ date: 2019-04-08 22:46:24
 author: huangkuiwei
 img: http://5b0988e595225.cdn.sohucs.com/images/20170910/4b1328ea36b14afa8a30a69f32eb9a44.jpeg
 tags: 
-    - ES6 JavaScript
+    - ES6
+    - JavaScript
 ---
 ## 一、前言
 在ES5中，如果你的js文件是依赖于其他js文件（例如：jquery、bootsrap.js等），那么你必须在html中先加载这些依赖，也就是要控制好每个js的加载顺序。想想为什么不能像java和Python中的import方式来解决呢？
